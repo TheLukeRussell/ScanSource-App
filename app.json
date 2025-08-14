@@ -1,14 +1,13 @@
 {
   "expo": {
-    "name": "ScanSource-App",
+    "name": "ScanSource App",
     "slug": "ScanSource-App",
     "version": "1.0.0",
+    "scheme": "expotabsdrawer",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,13 +16,20 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "package": "com.example.expotabsdrawerjs"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [],
+    "extra": {
+      "eas": {
+        "projectId": "dummy-project-id"
+      }
     }
   }
 }
